@@ -1,0 +1,17 @@
+
+
+  <ul id="todo-list">
+      <% @todos.each do |todo| %>
+    <li class="li-tasks">
+    <button class="btn" type="submit">
+        <%= link_to 'Complete', todo_path(todo), method: :delete  %> 
+    </button>
+     <%= todo.task %>
+    </li>
+    <hr>
+      <% end %>
+  </ul>
+
+
+
+
