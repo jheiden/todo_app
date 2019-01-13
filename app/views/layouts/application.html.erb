@@ -14,20 +14,20 @@
   <div class="navbar">
   To-Do List
   </div>
-      <div class="content">
+
+    <div class="content">
       <div class="flash">
           <h1 class="h1-flash">
             <%= flash.notice %>
           </h1>
-        </div> 
+      </div> 
           <h2>Uncompleted tasks: <%= Todo.count %></h2>
-        
-      <ul class="create-new"> 
-          <li>
+      <ul> 
+          <li class="func-li">
             <%= link_to ">> Create new To-Do <<", new_todo_path %>
           </li>
       </ul> 
     <%= yield %>
-      </div>  
-  </body>
+  </div>  
+</body>
 </html>

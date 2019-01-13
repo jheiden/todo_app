@@ -2,7 +2,9 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	font-family: monospace;	
+	font-family: monospace;
+	background: cornsilk;
+	font-size: 16px;	
 }
 
 ul {
@@ -20,7 +22,8 @@ a {
 	font-size: 14px;
 	text-align: left;
 }
-.create-new {
+
+.func-li {
 	border: 2px solid black;
 	border-radius: 25px;
 	padding: 5px;
@@ -30,11 +33,11 @@ a {
 	opacity: 0.8;
 }
 
-.create-new > li {
+.func-li > li {
 	font-size: 20px;
 }
 
-.create-new:hover {
+.func-li:hover {
 	opacity: 1;
 }
 
@@ -61,46 +64,26 @@ a {
 
 .btn:hover {
 	opacity: 1;
-	
-	
-}
-
-.btn-back {
-	border: 2px solid black;
-	border-radius: 25px;
-	background:  rgb(65, 214, 169);
-	box-shadow: 5px 4px #888888;
-	margin: 3px;
-	opacity: 0.8;
-	font-family: monospace;
-	font-size: 20px;
-	padding: 5px;
-}
-
-.btn-back:hover {
-	opacity: 1;
-	
-	
 }
 
 .h1-flash {
 	margin: 0 auto;
 	max-width: 400px;
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 
 .content {
-	
 	position: relative;
 	height: auto;
-	width: 400px;
+	width: 460px;
 	text-align: center;
 	margin: auto;
 	margin-top: 20px;
 	padding: 30px;
 }
 
-.todoapp {
+.textfield {
 	font-family: monospace;
 	font-size: 16px;
 	width: 190px;
