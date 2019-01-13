@@ -51,7 +51,8 @@ group :development do
   gem 'solargraph'
   gem 'better_errors', '~> 2.5'
   gem 'rubocop', '~> 0.62.0'
-  
+  # authentication
+  gem 'sorcery', '~> 0.13.0'
 end
 
 group :test do
