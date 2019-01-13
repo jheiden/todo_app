@@ -1,6 +1,10 @@
 
 
-  <ul id="todo-list">
+<h2 class="h-flash">Uncompleted tasks: <%= Todo.count %></h2>
+<ul> 
+    <li class="func-li"><%= link_to ">> Create new To-Do <<", new_todo_path %></li>
+</ul> 
+<ul id="todo-list">
       <% @todos.each do |todo| %>
     <li class="li-tasks">
     <button class="btn" type="submit">
@@ -10,7 +14,7 @@
     </li>
     <hr>
       <% end %>
-  </ul>
+</ul>
 
 
 

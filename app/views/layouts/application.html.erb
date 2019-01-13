@@ -12,21 +12,18 @@
 
 <body>
   <div class="navbar">
-  To-Do List
+  To-Do List <br>
   </div>
+
 
     <div class="content">
       <div class="flash">
-          <h1 class="h1-flash">
-            <%= flash.notice %>
-          </h1>
+        <h3 class="h-flash">
+            <%= render 'layouts/alerts' %>
+        </h3>
       </div> 
-          <h2>Uncompleted tasks: <%= Todo.count %></h2>
-      <ul> 
-          <li class="func-li">
-            <%= link_to ">> Create new To-Do <<", new_todo_path %>
-          </li>
-      </ul> 
+          
+     
     <%= yield %>
   </div>  
 </body>

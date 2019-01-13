@@ -51,7 +51,7 @@ group :development do
   gem 'solargraph'
   gem 'better_errors', '~> 2.5'
   gem 'rubocop', '~> 0.62.0'
-  
+  gem 'devise' 
 end
 
 group :test do
