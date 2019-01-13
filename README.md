@@ -1,6 +1,6 @@
 # README
 
-* Ruby v5.2
+* Rails 5.2.2
 * Basic CRUD functionality
 
 Features that will be implemented:
