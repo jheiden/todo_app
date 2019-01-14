@@ -42,6 +42,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+# TODO => gem 'pry' .. 
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -52,6 +54,7 @@ group :development do
   gem 'solargraph'
   gem 'better_errors', '~> 2.5'
   gem 'rubocop', '~> 0.62.0'
+  gem 'pry', '~> 0.12.2'
   
 end
   gem 'devise' 

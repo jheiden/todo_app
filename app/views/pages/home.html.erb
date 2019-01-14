@@ -7,5 +7,7 @@
 <%= link_to 'Sign in', new_user_session_path %>
 <% end %>
 
-
+<% if @user.id == 1 %>
+<%= @user %>
+<% end %>
 
