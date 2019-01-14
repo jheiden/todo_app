@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -51,8 +52,9 @@ group :development do
   gem 'solargraph'
   gem 'better_errors', '~> 2.5'
   gem 'rubocop', '~> 0.62.0'
-  gem 'devise' 
+  
 end
+  gem 'devise' 
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
