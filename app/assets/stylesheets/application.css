@@ -23,7 +23,7 @@ a {
 	text-align: left;
 }
 
-.func-li {
+.li-backto {
 	border: 2px solid black;
 	border-radius: 25px;
 	padding: 5px;
@@ -31,13 +31,15 @@ a {
 	box-shadow: 5px 4px #888888;
 	margin: 3px;
 	opacity: 0.8;
+	position: relative;
+	right: 20px;
 }
 
-.func-li > li {
+.li-backto > li {
 	font-size: 20px;
 }
 
-.func-li:hover {
+.li-backto:hover {
 	opacity: 1;
 }
 
@@ -48,7 +50,7 @@ a {
 	text-align: center;
 	background:  rgb(65, 214, 169);
 	padding-top: 25px;
-	border: 2px solid black;
+	
 }
 
 .btn {
@@ -59,6 +61,9 @@ a {
 	margin: 3px;
 	opacity: 0.8;
 	font-family: monospace;
+	font-size: 14px;
+	font-weight: bolder;
+	
 
 }
 
@@ -86,12 +91,55 @@ a {
 .textfield {
 	font-family: monospace;
 	font-size: 16px;
-	width: 190px;
+	width: 240px;
 	margin-top: 20px;
 	border-bottom: 0.1rem solid black;
 	background: none;
 	border-top: none;
 	border-right: none;
 	border-left: none;
+	
+}
+
+.textfield-additem {
+	font-family: monospace;
+	font-size: 16px;
+	width: 400px;
+	margin-top: 20px;
+	border-bottom: 0.1rem solid black;
+	background: none;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	text-align: center;
+	
+}
+
+.btn-additem {
+	border: 2px solid black;
+	border-radius: 25px;
+	background:  rgb(65, 214, 169);
+	box-shadow: 5px 4px #888888;
+	margin: 3px;
+	opacity: 0.8;
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: bolder;
+	position: relative;
+	
+	top: 10px;
+	
+}
+
+.btn-additem:hover {
+	opacity: 1;
+
+}
+
+.display-current-user {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	padding: 0px;
 }
 

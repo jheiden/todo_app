@@ -12,8 +12,14 @@
 
 <body>
   <div class="navbar">
-  To-Do List <br>
+  To-Do List <br />
+    
   </div>
+  <div class="display-current-user">
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>
+      <% end %>
+    </div>
 
 
     <div class="content">

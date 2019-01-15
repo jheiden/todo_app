@@ -4,15 +4,24 @@ class TodosController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
-    @todos = Todo.all
+    #@todos = Todo.all
+    if current_user
+    @todos = current_user.todos
+    else
+      flash.notice = "You must be logged in to access content"
+      redirect_to new_user_session_path
+    end
+
   end
 
   def new
-    @todo = Todo.new
+    @todo = current_user.todos.build
+    #@todo = Todo.new
   end
 
   def create
-    @todo = Todo.new(todo_params)
+    #@todo = Todo.new(todo_params)
+    @todo = current_user.todos.build(todo_params)
     if @todo.save 
       flash.notice = "Task created: #{@todo.task}"
       redirect_to todos_path

@@ -1,4 +1,5 @@
 class Todo < ApplicationRecord
   validates :task, presence: true
-  has_many :reminders
+  belongs_to :user
+  # adding association to user
 end

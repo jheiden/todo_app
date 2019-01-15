@@ -2,8 +2,8 @@
 <%=form_for(@todo) do |f| %>
 
     <%= f.label :"New To-Do: "%>
-    <%= f.text_field :task, :class => "textfield" %>
-    <%= f.submit "Add to List", :class => "btn" %>
+    <%= f.text_field :task, :class => "textfield-additem" %>
+    <%= f.submit "Add to List", :class => "btn-additem" %>
 
 
 <% end %>
