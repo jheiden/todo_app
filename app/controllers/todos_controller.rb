@@ -1,6 +1,7 @@
 class TodosController < ApplicationController
 
   #before_action :todo_params, only: [:show]
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @todos = Todo.all

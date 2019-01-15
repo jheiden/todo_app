@@ -7,7 +7,4 @@
 <%= link_to 'Sign in', new_user_session_path %>
 <% end %>
 
-<% if @user.id == 1 %>
-<%= @user %>
-<% end %>
-
+<%= link_to 'ToDo List', todos_path %>
