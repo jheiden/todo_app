@@ -1,7 +1,7 @@
 
 <h2 class="h-flash">Uncompleted tasks: <%= current_user.todos.count %></h2>
 <ul> 
-    <li class="li-backto"><%= link_to ">> Create new To-Do <<", new_todo_path %></li>
+    <li class="li-navlink"><%= link_to ">> Create new To-Do <<", new_todo_path %></li>
 </ul> 
 <ul id="todo-list">
       <% @todos.each do |todo| %>

@@ -11,26 +11,20 @@
   </head>
 
 <body>
-  <div class="navbar">
+  <header class="navbar">
   To-Do List <br />
     
-  </div>
+  </header>
   <div class="display-current-user">
       <% if user_signed_in? %>
         Logged in as <strong><%= current_user.email %></strong>
       <% end %>
     </div>
-
-
-    <div class="content">
-      <div class="flash">
-        <h3 class="h-flash">
+      <div class="flash-wrapper">
             <%= render 'layouts/alerts' %>
-        </h3>
       </div> 
-          
-     
-    <%= yield %>
+  <div class="content">
+        <%= yield %>
   </div>  
 </body>
 </html>

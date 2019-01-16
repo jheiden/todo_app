@@ -54,7 +54,7 @@ group :development do
   gem 'solargraph'
   gem 'better_errors', '~> 2.5'
   gem 'rubocop', '~> 0.62.0'
-  #gem 'pry', '~> 0.12.2'
+  gem 'pry-rails', '~> 0.3.9'
   
 end
   gem 'devise' 
