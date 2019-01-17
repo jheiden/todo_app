@@ -2,14 +2,16 @@
 <% if @todo.errors.any? %>
     <% @todo.errors.full_messages.each do |msg| %>
     <ul>
-   <li class=""><strong><%= msg %></strong></li>
+   <li class="#"><strong><%= msg %></strong></li>
     <% end %>
     </ul>
 <% end %>
 
 <%=form_for(@todo) do |f| %>
-    <%= f.label :"New To-Do: "%>
-    <%= f.text_field :task, :class => "textfield-additem" %>
+
+    <strong><%= f.label :"Task: " %></strong>
+    <br>
+    <%= f.text_field :task, :class => "textfield-additem", autocomplete: "off" %>
     <%= f.submit "Add to List", :class => "btn-additem" %>
 <% end %>
 

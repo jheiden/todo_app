@@ -6,15 +6,14 @@
 <ul id="todo-list">
       <% @todos.each do |todo| %>
     <li class="li-tasks">
-    <button class="btn" type="submit">
-        <%= link_to 'Complete', todo_path(todo), method: :delete  %> 
-    </button>
+    <%= link_to '', edit_todo_path(todo), class: "fas fa-pencil-alt fa-lg"%>
+    <%= link_to '', todo_path(todo), method: :delete, class: "fas fa-check-square fa-lg" %> 
      <%= todo.task %>
     </li>
     <hr>
       <% end %>
 </ul>
 
-<u><%= link_to 'Home', root_path %></u>
+<i class="fas fa-home fa-lg"><%= link_to 'Home', root_path %></i>
 
 

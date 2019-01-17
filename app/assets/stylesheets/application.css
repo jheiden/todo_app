@@ -1,3 +1,9 @@
+
+/*
+ *= require font-awesome
+ */
+
+
 html,
 body {
 margin: 0;
@@ -146,4 +152,10 @@ margin-top: 10px;
 margin-left: 10px;
 font-size: 14px;
 padding: 0px;
+}
+
+
+
+.fa-sign-out-alt{
+     margin-right: 1em;
 }

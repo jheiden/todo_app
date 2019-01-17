@@ -1,11 +1,14 @@
-<h1 class="about">To-Do Web App</h1>
+
 
 
 <% if current_user %>
-<u><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></u>
+<i class="fas fa-sign-out-alt fa-2x"><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></i>
+
+<i class="far fa-list-alt fa-2x"><%= link_to 'To-do list', todos_path %></i>
 <% else %>
 <u><%= link_to 'Register', new_user_registration_path%></u>
+or >>
 <u><%= link_to 'Sign in', new_user_session_path %></u>
 <% end %>
 
-<u><%= link_to 'To-do list', todos_path %></u>
+

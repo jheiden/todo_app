@@ -4,21 +4,23 @@
     <title>TodoApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
 <body>
   <header class="navbar">
-  To-Do List <br />
-    
+  <i class="far fa-list-alt"></i>
+  To-Do Web App
   </header>
   <div class="display-current-user">
       <% if user_signed_in? %>
-        Logged in as <strong><%= current_user.email %></strong>
+         <strong>User: <%= current_user.email %></strong>
       <% end %>
+      
     </div>
       <div class="flash-wrapper">
             <%= render 'layouts/alerts' %>
