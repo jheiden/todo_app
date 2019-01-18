@@ -11,3 +11,6 @@ Features that will be implemented:
 * Task locations (?)
 
 * Application deployed at https://shielded-temple-76692.herokuapp.com/todos
+
+![Screenshot](docs/screen1.png)
+![Screenshot](docs/screen2.png)
