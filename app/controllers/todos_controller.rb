@@ -4,7 +4,6 @@ class TodosController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
-    #@todos = Todo.all
     if current_user
     @todos = current_user.todos
     else
@@ -16,17 +15,15 @@ class TodosController < ApplicationController
 
   def new
     @todo = current_user.todos.build
-    #@todo = Todo.new
   end
 
   def create
-    #@todo = Todo.new(todo_params)
     @todo = current_user.todos.build(todo_params)
     if @todo.save 
       flash.notice = "Task created: #{@todo.task}"
       redirect_to todos_path
     else 
-      # if validation in model fails => we want to render a new form
+      # if validation in model fails (e.g save method returns false) => we want to render a new form
       render 'new'
     end
   end
@@ -47,6 +44,7 @@ class TodosController < ApplicationController
 
   def show
     @todo = Todo.find(params[:id])
+    
   end
   
   def destroy
@@ -61,7 +59,6 @@ class TodosController < ApplicationController
   def todo_params
     params.require(:todo).permit(:task)
   end
-
-
+  
 
 end

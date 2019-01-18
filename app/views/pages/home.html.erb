@@ -2,9 +2,9 @@
 
 
 <% if current_user %>
-<i class="fas fa-sign-out-alt fa-2x"><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></i>
+<i class="fas fa-sign-out-alt fa-2x"><%= link_to ' Log out', destroy_user_session_path, method: :delete %></i>
 
-<i class="far fa-list-alt fa-2x"><%= link_to 'To-do list', todos_path %></i>
+<i class="far fa-list-alt fa-2x"><%= link_to ' To-do list', todos_path %></i>
 <% else %>
 <u><%= link_to 'Register', new_user_registration_path%></u>
 or >>
