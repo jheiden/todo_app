@@ -12,5 +12,5 @@ Features that will be implemented:
 
 * Application deployed at https://shielded-temple-76692.herokuapp.com/todos
 
-![Screenshot](/docs/screen1.png)
-![Screenshot](/docs/screen2.png)
+![Screenshot](/docs/screen1.png?raw=true "Screenshot")
+![Screenshot](/docs/screen2.png?raw=true "Screenshot")
