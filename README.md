@@ -3,12 +3,14 @@
 * Rails 5.2.2
 * Basic CRUD functionality
 
-Features that will be implemented:
+Features:
 
-* User Authentication
-* Task deadlines with email notifications sent to user
-* File upload to tasks
-* Task locations (?)
+* User Authentication with devise
+* Icons using fontawesome
+* Simple validations
+* User feedback
+
+
 
 * Application deployed at https://shielded-temple-76692.herokuapp.com/todos
 
