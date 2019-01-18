@@ -9,3 +9,5 @@ Features that will be implemented:
 * Task deadlines with email notifications sent to user
 * File upload to tasks
 * Task locations (?)
+
+* Application deployed at https://shielded-temple-76692.herokuapp.com/todos
